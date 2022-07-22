@@ -1,0 +1,121 @@
+@font-face {
+    src: url(../Fonts/CursedTimerUlil-Aznm.ttf);
+    font-family: Cursed;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/basketball.jpg) no-repeat center;
+    background-size: 135vw 135vh;
+}
+button{
+    cursor: pointer;
+}
+
+.score-reset{
+    font-family: Verdana;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 15px;
+    font-size: 35px;
+    border: 3px solid rgb(230, 71, 71);
+    color: rgb(230, 71, 71);
+    border-radius: 5px;
+    background: none;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+}
+.score-reset:before{
+    content: '';
+    background-color: rgb(230, 71, 71);
+    height: 102%;
+    width: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    border-radius: 5px;
+    transform: translateX(-100%);
+    transition: all .2s;
+    z-index: -1;
+
+}
+.score-reset:hover{
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+.score-reset:hover::before{
+    transform: translatex(0);
+}
+
+.container{
+    margin-top: 180px;
+    margin-right: 50px;
+    align-items: flex-end;
+    background-color: rgb(47 48 52);
+    display: flex;
+    justify-content: space-around;
+    font-size: 80px;
+
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    width: 600px;
+    transform: rotate(7deg);
+    position: relative;
+}
+.container:before{
+    content: 'Scoreboards';
+    position: absolute;
+    top: -8%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: arial;
+    color: rgb(230, 71, 71);
+    text-transform: uppercase;
+    background-color: rgb(33, 33, 35);
+    padding: 10px 20px;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+}
+
+h3{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    margin: 60px 0 30px 0;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.score-box{
+    padding: 30px 10px 10px 0px;
+    background-color: black;
+    color: rgb(230, 71, 71);
+    display: flex;
+    justify-content: flex-end;
+    font-size: 100px;
+    font-family: Cursed;
+    border-radius: 10px;
+    width: 185px;
+}
+
+.addition{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.score-add{
+    font-family: Cursed;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 15px;
+    border: 3px solid rgb(106, 126, 181);
+    color: rgb(106, 126, 181);
+    border-radius: 5px;
+    background: none;
+}
